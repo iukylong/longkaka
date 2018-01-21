@@ -73,7 +73,7 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
         String tenDangNhap = edTenDangNhapDN.getText().toString();
         String matKhau = edMatKhauDN.getText().toString();
         boolean kiemtra = nhanVienDAO.KiemTraDangNhap(tenDangNhap, matKhau);
-        if (kiemtra == true) {
+        if (kiemtra) {
             Toast.makeText(DangNhapActivity.this, R.string.dangnhapthanhcong, Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(DangNhapActivity.this, R.string.dangnhapthatbai, Toast.LENGTH_SHORT).show();
