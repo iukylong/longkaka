@@ -69,6 +69,9 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
+    /**
+     * handle login of app
+     */
     private void DangNhap() {
         String tenDangNhap = edTenDangNhapDN.getText().toString();
         String matKhau = edMatKhauDN.getText().toString();
