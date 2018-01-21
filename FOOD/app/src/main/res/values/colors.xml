@@ -9,4 +9,5 @@
     <color name="colorGreenButton">#43A047</color>
     <color name="backgroundDangNhap">#2c3184</color>
     <color name="colorRed">#730c0c</color>
+    <color name="bgtoolbar">#a1480c</color>
 </resources>

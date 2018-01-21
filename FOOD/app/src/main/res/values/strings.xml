@@ -13,4 +13,11 @@
     <string name="themthatbai">Thêm Thất Bại </string>
     <string name="dangnhapthanhcong">Đăng Nhập Thành Công</string>
     <string name="dangnhapthatbai">Đăng Nhập Thát Bại</string>
+    <string name="trangchu">Trang Chủ</string>
+    <string name="thucdon">Thực Đơn</string>
+    <string name="thongke">Thống Kê</string>
+    <string name="nhanvien">Nhân Viên</string>
+    <string name="caidat">Settings</string>
+    <string name="mo">Mở</string>
+    <string name="dong">Đóng</string>
 </resources>
