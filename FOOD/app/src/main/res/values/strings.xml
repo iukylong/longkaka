@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FOOD</string>
+    <string name="tendangnhap">Tên Đăng Nhập</string>
+    <string name="nhapmatkhau">Mật Khẩu</string>
+    <string name="ngaysinh">Ngày Sinh</string>
+    <string name="chungminhnhandan">Chứng Minh Nhân Dân</string>
+    <string name="dongy">Đồng Ý</string>
+    <string name="thoat">Thoát</string>
+    <string name="dangky">Đăng Ký</string>
+    <string name="loinhaptendangnhap">Vui Lòng Nhập Tên Đăng Nhập</string>
+    <string name="loinhapmatkhau">Vui Lòng Nhập Mật Khẩu</string>
+    <string name="themthanhcong">Thêm Thành Công </string>
+    <string name="themthatbai">Thêm Thất Bại </string>
+    <string name="dangnhapthanhcong">Đăng Nhập Thành Công</string>
+    <string name="dangnhapthatbai">Đăng Nhập Thát Bại</string>
+</resources>
