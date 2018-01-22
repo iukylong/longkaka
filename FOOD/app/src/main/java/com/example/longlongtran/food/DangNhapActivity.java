@@ -75,10 +75,11 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
         boolean kiemtra = nhanVienDAO.KiemTraDangNhap(tenDangNhap, matKhau);
         if (kiemtra) {
             Intent iTrangChu = new Intent(DangNhapActivity.this, TrangChuActivity.class);
-            iTrangChu.putExtra("tendangnhap",tenDangNhap);
+            iTrangChu.putExtra("tendangnhap", tenDangNhap);
             iTrangChu.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(iTrangChu);
             finish();
+            Toast.makeText(DangNhapActivity.this, R.string.dangnhapthanhcong, Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(DangNhapActivity.this, R.string.dangnhapthatbai, Toast.LENGTH_SHORT).show();
         }
