@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/size10dp"
+    android:background="@color/colorOrganButton"
+    tools:context="com.example.longlongtran.food.ThemBanAnActivity">
+
+    <EditText
+        android:id="@+id/edThemTenBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/tenbanan"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:padding="@dimen/size10dp"
+        />
+
+    <Button
+        android:id="@+id/btnDongYThemBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dongy" />
+
+</LinearLayout>

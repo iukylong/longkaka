@@ -6,14 +6,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.longlongtran.food.FragmentApp.HienThiBanAnFragment;
 
 
 /**
@@ -26,6 +29,7 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
     NavigationView navigationView;
     Toolbar toolbar;
     TextView tv_TenNhanVien;
+    FragmentManager fragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -65,12 +69,29 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
         navigationView.setItemIconTintList(null);
+        navigationView.setNavigationItemSelectedListener(this);
+        fragment = getSupportFragmentManager();
+        FragmentTransaction tranHienThiBanAn = fragment.beginTransaction();
+        HienThiBanAnFragment hienThiBanAnFragment = new HienThiBanAnFragment();
+        tranHienThiBanAn.replace(R.id.content, hienThiBanAnFragment);
+        tranHienThiBanAn.commit();
 
 
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.itTrangChu:
+                FragmentTransaction tranHienThiBanAn = fragment.beginTransaction();
+                HienThiBanAnFragment hienThiBanAnFragment = new HienThiBanAnFragment();
+                tranHienThiBanAn.replace(R.id.content, hienThiBanAnFragment);
+                tranHienThiBanAn.commit();
+                item.setChecked(true);
+                drawerLayout.closeDrawers();
+                break;
+
+        }
         return false;
     }
 }

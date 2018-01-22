@@ -20,4 +20,6 @@
     <string name="caidat">Settings</string>
     <string name="mo">Mở</string>
     <string name="dong">Đóng</string>
+    <string name="thembanan">Thêm Bàn Ăn</string>
+    <string name="tenbanan">Tên Bàn Ăn</string>
 </resources>

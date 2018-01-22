@@ -4,5 +4,7 @@
     <dimen name="size10dp">10dp</dimen>
     <dimen name="size30sp">30sp</dimen>
     <dimen name="size190dp">190dp</dimen>
+    <dimen name="size18sp">18sp</dimen>
+    <dimen name="size5dp">5dp</dimen>
 
 </resources>
